@@ -13,3 +13,19 @@ Fluxo do código com a Fábrica Dinâmica se torna o seguinte:
 4 - A fábrica retorna o objeto de relatório correto.
 
 5 - O relatório é gerado.
+
+
+// Explicação importante do funcionamento para estudos e consultas: 
+
+
+1 **A `Main` chama** `FabricaDinamica.getFactory(escolha)`.  
+2 **O código sai da `Main`** e vai para `getFactory(escolha)`.  
+3 **Dentro de `getFactory()`**, ele procura no `Map` **o que foi digitado** pelo usuário.  
+4 **Se encontrar**, ele retorna essa fábrica pelo `return factories.get(escolha);`.  
+5 **Essa fábrica "volta" para a `Main`** e é armazenada na variável `RelatorioFactory factory`.  
+
+Ou seja:  
+- **O `escolha` é o número digitado pelo usuário** (1, 2 ou 3).  
+- **O `Map` usa esse número para pegar a fábrica correspondente**.  
+- **O `return` devolve essa fábrica para a `Main`**, onde ela fica armazenada na variável `factory`.  
+

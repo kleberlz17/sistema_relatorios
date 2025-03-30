@@ -1,4 +1,6 @@
 Sistema de relatórios básico em Factory Method, adição de uma classe - FabricaDinamica, para deixar o código main mais limpo, agora o main valida a opção que o usuário escolher chamando a FabricaDinamica;
+Dessa forma, caso seja preciso adicionar um novo tipo de relatório, basta mudar a *FabricaDinamica*, sem tocar na main.
+
 Fluxo do código com a Fábrica Dinâmica se torna o seguinte: 
 
 1 - O usuário escolhe o tipo de relatório(1, 2 ou 3).
